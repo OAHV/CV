@@ -2,13 +2,20 @@
 <html>
     <head>
         <title>CV - Ole Victor</title>
-        <link rel="stylesheet" href="cv.css">
+        <link rel="stylesheet" href="cv.css" id="styleCV">
+        <link rel="stylesheet" href="flex.css">   <!-- This can be commented out to see a table instead -->
     </head>
     <body>
-        <h1>Ole Victor</h1>
-        <p>Curiculum Vitæ in short</p>
+        <div class="Ole">
+            <!-- White title with picture -->
+            <img src="ole.jpg" alt="Ole Victor" style="float: left">
+            <h1>Ole Victor</h1>
+            <p>Curiculum Vitæ in short</p>
+        </div>
         <table>
-            <tr>
+            <!-- Table with all the data - also for flexbox model -->
+            <tr class="heading">
+                <!-- Class heading is hidden in flexbox model -->
                 <th>When</th>
                 <th>Duration</th>
                 <th>What</th>
@@ -17,25 +24,27 @@
             </tr>
             <tr>
                 <td>1959</td>
-                <td></td>
+                <td>Ongoing</td>
                 <td>Born<div class="pu">
+                    <!-- This (pu) div is a pop-up -->
                     Father: Arne Victor<br>
                     Mother: Elisabet Victor
                 </div></td>
                 <td>Akademiska sjukhuset<div class="pu">Second largest university hospital in Sweden</div></td>
                 <td>Uppsala, Sweden</td>
             </tr>
-            <tr>
+            <tr class="heading">
                 <th colspan="5">School</th>
             </tr>
-            <tr>
+            <tr class="school">
+                <!-- School (or work) displays in different colors -->
                 <td>1967</td>
                 <td>½ year</td>
                 <td>Primary school</td>
                 <td>Orstenskolan</td>
                 <td>Uppsala, Sweden</td>
             </tr>
-            <tr>
+            <tr class="school">
                 <td>1968</td>
                 <td>6 years</td>
                 <td>Primary school</td>
@@ -48,7 +57,7 @@
                     got their first jobbs after finishing their respective educations.
                 </div></td>
             </tr>
-            <tr>
+            <tr class="school">
                 <td>1973</td>
                 <td>3 years</td>
                 <td>Primary school</td>
@@ -57,7 +66,7 @@
                 </div></td>
                 <td>Uppsala, Sweden</td>
             </tr>
-            <tr>
+            <tr class="school">
                 <td>1975</td>
                 <td>3 years</td>
                 <td>Gymnasium</td>
@@ -71,10 +80,10 @@
                     </div></td>
                 <td>Uppsala, Sweden</td>
             </tr>
-            <tr>
+            <tr class="heading">
                 <th colspan="5">Life Experience</th>
             </tr>
-            <tr>
+            <tr class="work">
                 <td>1978</td>
                 <td>1 year</td>
                 <td>Factory worker<div class="pu">
@@ -84,7 +93,7 @@
                 <td>Uppsala Cementgjuteri</td>
                 <td>Uppsala, Sweden</td>
             </tr>
-            <tr>
+            <tr class="work">
                 <td>1979</td>
                 <td>1 year</td>
                 <td>Military service<div class="pu">I was an infantry squad leader
@@ -94,10 +103,10 @@
                 <td>I14</td>
                 <td>Gävle, Sweden</td>
             </tr>
-            <tr>
+            <tr class="heading">
                 <th colspan="5">Education</th>
             </tr>
-            <tr>
+            <tr class="school">
                 <td>1980</td>
                 <td>5 years</td>
                 <td>MSc Systems engineering</td>
@@ -109,7 +118,7 @@
                 </div></td>
                 <td>Stockholm, Sweden</td>
             </tr>
-            <tr>
+            <tr class="school">
                 <td>1982</td>
                 <td>1 year</td>
                 <td>Literature, Law, Economics<div class="pu">
@@ -119,10 +128,10 @@
                 <td>Stockholm University</td>
                 <td>Stockholm, Sweden</td>
             </tr>
-            <tr>
+            <tr class="heading">
                 <th colspan="5">Work experience</th>
             </tr>
-            <tr>
+            <tr class="work">
                 <td>1985</td>
                 <td>1½ years</td>
                 <td>Development engineer<div class="pu">
@@ -134,7 +143,7 @@
                 </div></td>
                 <td>Stockholm, Sweden</td>
             </tr>
-            <tr>
+            <tr class="work">
                 <td>1987</td>
                 <td>6 years</td>
                 <td>Researcher</td>
@@ -145,17 +154,17 @@
                 </div></td>
                 <td>Stockholm, Sweden</td>
             </tr>
-            <tr>
+            <tr class="heading">
                 <th colspan="5">Education</th>
             </tr>
-            <tr>
+            <tr class="school">
                 <td>1993</td>
                 <td>2 years</td>
                 <td>Ceramics<div class="pu">Ceramics design and pottery.</div></td>
                 <td>Capellagården</td>
                 <td>Vickleby, Öland</td>
             </tr>
-            <tr>
+            <tr class="school">
                 <td>1995</td>
                 <td>5 years</td>
                 <td>MFA Design<div class="pu">Product designer specializing in Glass Design.</div></td>
@@ -165,17 +174,17 @@
                 </div></td>
                 <td>Copenhagen, Denmark</td>
             </tr>
-            <tr>
+            <tr class="heading">
                 <th colspan="5">Work Experience</th>
             </tr>
-            <tr>
+            <tr class="work">
                 <td>2001</td>
-                <td></td>
+                <td>4 years</td>
                 <td>Self employed</td>
                 <td>Ole Victor Design</td>
                 <td>Copenhagen, Denmark</td>
             </tr>
-            <tr>
+            <tr class="work">
                 <td>2002</td>
                 <td>2 years</td>
                 <td>Consultant Teacher<div class="pu">The first two years at Kalmar
@@ -188,16 +197,16 @@
                 <td>Kalmar University</td>
                 <td>Nybro, Sweden</td>
             </tr>
-            <tr>
+            <tr class="work">
                 <td>2004</td>
-                <td></td>
+                <td>4 years</td>
                 <td>Lecturer<div class="pu">I got a permanent position as a lecurer.
                     I was still responsible for the Glass Design course.
                 </div></td>
                 <td>Kalmar University</td>
                 <td>Nybro, Sweden</td>
             </tr>
-            <tr>
+            <tr class="work">
                 <td>2008</td>
                 <td>11 years</td>
                 <td>Senior Lecturer, Researcher<div class="pu">I was promoted to
@@ -211,14 +220,14 @@
                 </div></td>
                 <td>Nybro, Sweden</td>
             </tr>
-            <tr>
+            <tr class="work">
                 <td>2019</td>
                 <td>Ongoing</td>
                 <td>Self employed</td>
                 <td>Ole Victor ApS</td>
                 <td>Copenhagen, Denmark</td>
             </tr>
-            <tr>
+            <tr class="work">
                 <td>2020</td>
                 <td>½ year</td>
                 <td>Logistics</td>
@@ -226,10 +235,10 @@
                     Surveys of Denmark and Greenland.</div></td>
                 <td>Copenhagen, Denmark</td>
             </tr>
-            <tr>
+            <tr class="heading">
                 <th colspan="5">Education</th>
             </tr>
-            <tr>
+            <tr class="school">
                 <td>2022</td>
                 <td>½ year</td>
                 <td>Full Stack<div class="pu">C# .NET with HTML, CSS, Javascript
