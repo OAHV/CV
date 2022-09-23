@@ -5,7 +5,7 @@ This is an education project during a developer course.
 <h2>What I have done</h2>
 A simple CV in HTML and CSS (no JavaScript according to instructions).
 
-All data is in a <table> structure.
+All data is in a \<table\> structure.
 
 It can be displayed as a table (by commenting out the 'flex.css' link in the 'index.html' file).
 
@@ -17,7 +17,7 @@ I have learned:
 <li>About the flexbox model
 <li>About positioning
 <li>About 'tootips'
-<li>The <table> structure and the 'tbody' element
+<li>The < table > structure and the 'tbody' element
 </ul>
 
 <h1>Task</h1>
